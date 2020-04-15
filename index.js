@@ -17,4 +17,9 @@ function currentLine(line) {
   if (!line.length) {
     return "The line is currently empty."
   }
-}
+  const number = []
+  for (let i = 0, 1 = line.length; i < 1; i++) {
+    number.push(`${i + i}. ${line[i]}`)
+  }
+  return `The line is currently: ${number.join(',')}`
+};
